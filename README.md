@@ -35,8 +35,7 @@ Users should be able to:
 
 
 ### What I learned
-
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned use of grid and some elements like article tag and some media query.
 
 To see how you can add code snippets, see below:
 
