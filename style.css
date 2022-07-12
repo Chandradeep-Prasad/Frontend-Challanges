@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:ital,wght@0,700;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    font-family: "Monteserrat",sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 0.1px);
+    margin: 0 1.2rem;
+}
+.container{
+    max-width: 600px;
+}
+h1, 
+.newPrice{
+    font-family: "Fraunces",sans-serif;
+}
+.newPrice{
+    color: hsl(158, 36%, 37%);
+}
+h1{
+    color: hsl(212, 21%, 14%);
+}
+h2{
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 0.2rem;
+}
+p{
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6;
+}
+ul{
+    list-style-type: none;
+}
+img{
+    max-width: 100%;
+}
+.container h1{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+.container p{
+    margin-bottom: 2rem;
+}
+.container ul{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.container ul li:first-child{
+    font-size: 2rem;
+    margin-right: 2rem;
+}
+.container ul li:last-child{
+    color: hsl(228, 12%, 48%);
+}
+.container article:last-child{
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 0 0 1rem 1rem;
+    margin-top: -1rem;
+}
+.container article:first-child img{
+    border-radius: 1rem 1rem 0 0;
+}
+.container .cartBtn{
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding:  1rem;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.container .cartBtn:hover{
+    background-color: hsl(158, 43%, 17%);
+}
+.container .cartBtn img{
+    margin-right: 0.5rem;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 2rem;
+    
+ }
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+    
+}
+
+@media (min-width: 640px) {
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .container article :first-child img{
+        border-radius: 1rem 0 0 1rem;
+    }
+    .container article:last-child{
+        border-radius: 0 1rem 1rem 0;
+        margin-top: 0;
+    }
+    picture img{
+        height: 100%;
+    }
+}
